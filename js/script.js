@@ -9,16 +9,16 @@
 function calculate() {
 
   // input
-  let firstNumber = parseFloat(document.getElementById("numberone").value)
-  const secondNumber = parseFloat(document.getElementById("numbertwo").value)
+  let counter = 0
   let answer = 0
+  const firstNumber = parseFloat(document.getElementById('numberone').value)
+  const secondNumber = parseFloat(document.getElementById('numbertwo').value)
 
   // process
-  while (firstNumber >= 1) {
-    answer = answer + secondNumber
-    firstNumber = firstNumber - 1;
+  while (counter < secondNumber) {
+    counter = counter + 1
+    answer = answer + firstNumber
   }
   // output
-  document.getElementById("answer").innerHTML =
-    'The product is: ' + answer + '.'
- }
+  document.getElementById('answer').innerHTML = 'Your product is: ' + answer + '.'
+}
