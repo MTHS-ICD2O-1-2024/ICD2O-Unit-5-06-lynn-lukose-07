@@ -5,6 +5,7 @@
 // This file contains the JS functions for index.html
 
 "use strict"
+
 // this function does multiplication using a while loop!
 function calculate() {
 
